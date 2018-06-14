@@ -1,8 +1,10 @@
 /* eslint-disable global-require */
+/*eslint-disable*/
 const { IgnorePlugin } = require('webpack');
 const OfflinePlugin = require('offline-plugin');
 const router = require('./routes');
 const Dotenv = require('dotenv-webpack');
+const withCss = require('@zeit/next-css');
 
 const initExport = {
   webpack: (config, { dev }) => {
@@ -98,6 +100,9 @@ if (process.env.STATIC_EXPORT) {
     return routes;
   };
 }
+if (typeof require !== 'undefined') {
+  require.extensions['.css'] = file => {};
+}
 
 /* eslint-enable global-require */
-module.exports = initExport;
+module.exports = withCss(initExport);

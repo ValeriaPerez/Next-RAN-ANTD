@@ -1,5 +1,7 @@
+/* eslint-disable*/ 
 import Document, { Head, Main, NextScript } from 'next/document';
 import Helmet from 'react-helmet';
+import stylesheet from 'antd/dist/antd.min.css'
 import { ServerStyleSheet } from 'styled-components';
 import AppIcons from '../components/AppIcons';
 
@@ -45,6 +47,7 @@ export default class MyDocument extends Document {
           {this.helmetHeadComponents()}
           {AppIcons()}
           {this.props.styleTags}
+          <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         </Head>
         <body>
           <Main />

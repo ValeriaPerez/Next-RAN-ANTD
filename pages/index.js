@@ -1,11 +1,16 @@
 // @flow
 import * as React from 'react';
-import PostList from '../components/PostList';
-import withData from '../libraries/withData';
-import DefaultCon from '../containers/Default';
+import { Row, Col } from 'antd';
 
-export default withData(props => (
-  <DefaultCon {...props}>
-    <PostList />
-  </DefaultCon>
-));
+export default () => (
+  <div>
+    <p>HOLALA</p>
+    <div>
+      <Row>
+        <Col span={12} offset={6}>
+          <p>Columna</p>
+        </Col>
+      </Row>
+    </div>
+  </div>
+);
