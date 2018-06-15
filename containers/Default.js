@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import App from '../components/App';
-import Header from '../components/Header';
+import Header from '../components/header';
 import ProjectInfo from '../components/ProjectInfo';
 
 type Props = {
