@@ -1,16 +1,13 @@
+/*eslint-disable*/
 // @flow
 import * as React from 'react';
 import { Row, Col } from 'antd';
 
+// Your top level component
+import Landing from '../containers/Landing';
+
 export default () => (
   <div>
-    <p>HOLALA</p>
-    <div>
-      <Row>
-        <Col span={12} offset={6}>
-          <p>Columna</p>
-        </Col>
-      </Row>
-    </div>
+    <Landing />
   </div>
 );
