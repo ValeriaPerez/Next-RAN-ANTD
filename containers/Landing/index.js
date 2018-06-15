@@ -14,7 +14,7 @@ import Drawer from 'material-ui/Drawer';
 // components
 import ButtonStyled from '../../components/button';
 import Footer from '../../components/footer';
-import Header from '../../components/header';
+import Header from '../../components/Header';
 import Title from '../../components/title';
 import VideoCard from '../../components/video-card';
 import VideoStatic from '../../components/video-static';
